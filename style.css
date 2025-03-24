@@ -407,3 +407,57 @@
             padding: 200px;
         }
 
+/* Styles pour les petits écrans (ex: téléphone) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px; /* Réduit la taille du texte */
+        padding: 10px;
+    }
+
+    .banner {
+        text-align: center; /* Centre le texte */
+        padding: 20px;
+    }
+
+    .banner h1 {
+        font-size: 24px; /* Réduit la taille du titre */
+    }
+
+    .banner p {
+        font-size: 18px;
+    }
+
+    .container {
+        width: 100%; /* Prend toute la largeur */
+        padding: 10px;
+    }
+
+    .row {
+        flex-direction: column; /* Affiche les éléments en colonne */
+        text-align: center;
+    }
+
+    .col50 {
+        width: 100%; /* Chaque colonne prend 100% */
+    }
+
+    img {
+        width: 90%; /* Réduit les images */
+        height: auto;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .btn-btn {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .menu {
+        display: block; /* Affiche le menu en mode mobile */
+        text-align: center;
+    }
+}
+
+
