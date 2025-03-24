@@ -1,0 +1,408 @@
+       
+            /*@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700;800;900;1000&display=swap');*/
+            @import url('https://fonts.googleapis.com/css2?family=Redressed&family=Merriweather:wght@300;400;700&display=swap');
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Redressed', cursive;
+            background-color: #FAFAFA07;
+
+        }
+        /* l'entete de la bar de navigation  */
+        
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(20, 3, 3);
+            box-shadow: gray 1px 2px 8px;
+            height: 65px;
+            position: fixed;
+            z-index: 1;
+        }
+        /* modification des balise <a>  dans le menu de navigation  */
+        
+        .navbar ul li a {
+            text-decoration: none;
+            padding-right: 75px;
+            color: #0dd0f7;
+            
+        }
+        .navbar ul li:hover a {
+            text-decoration: none;
+            color: #fafafa;
+        }
+
+        /* modifiation du menu de navigation   */
+        
+        .navbar li {
+            list-style: none;
+            display: flex;
+            float: left;
+            top: -10px;
+            position: relative;
+        }
+        /* modification du logo  */
+        
+        .navbar-brand {
+            padding-left: 100px;
+            color: #0dd0f7;
+        }
+        /* modification de la bannier */
+
+        /* 🌐 Style de la bannière */
+.banner {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(45deg, #0a0a0a, #1e1e1e);
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+}
+
+/* 🔵 Boule animée (bleu 0dd0f7) */
+.animated-circle {
+    position: absolute;
+    top: 50%; 
+    left: 10%;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(13, 208, 247, 0.3); /* Bleu transparent */
+    border-radius: 50%;
+    animation: moveCircle 6s linear infinite alternate;
+}
+
+/* 🔄 Animation de la boule */
+@keyframes moveCircle {
+    0% { left: 10%; }
+    100% { left: 90%; }
+}
+
+/* 🟢 Texte animé (Développeur Web <-> Informaticien avec effet d'écriture) */
+#animated-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(29, 202, 246);
+}
+
+/* Curseur qui clignote */
+.cursor {
+    display: inline-block;
+    width: 5px;
+    background: rgb(5, 217, 255);
+    animation: blinkCursor 0.8s infinite;
+}
+
+@keyframes blinkCursor {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+        
+        
+        /* modification du contenu de la bannier */
+        
+        .banner-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        /* modificqtion du paragraphe de notre bqnnier */
+        
+        .banner-text {
+            color: rgb(250, 250, 250);
+            font-size: 55px;
+            font-style: italic;
+        }
+
+        .banner-text .p {
+            color: rgb(220, 13, 13);
+            font-size: 55px;
+            font-style: italic;
+        }
+        /* modification du bouton start */
+        
+        .btn-btn {
+            border: 2px solid rgb(246, 246, 249);
+            padding: 10px 30px;
+            color: #ffffff;
+            border-radius: 20px;
+            text-decoration: none;
+            font-style: italic;
+        }
+        
+        .btn-btn:hover {
+            background-color: #07060b;
+        }
+        
+        .card-body {
+            margin-top: 50px;
+            padding-left: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .apropos {
+            display: flex; 
+            align-items: center; /* Centre verticalement */
+            justify-content: space-between; /* Équilibre l'espace entre le texte et l'image */
+        }
+        
+        .apropos .col50 {
+            width: 50%; /* Texte prend 50% de l'espace */
+        }
+        
+        .apropos .img {
+            width: 50%; /* Image prend 50% de l'espace */
+            margin-top: 20px; /* Ajuste cette valeur pour descendre l'image */
+            display: flex;
+            justify-content: center; /* Centre l'image horizontalement */
+            align-items: center; /* Centre l'image verticalement */
+            margin-top: 30px; /* Ajuste la hauteur */
+            margin-left: auto; /* Assure que l'image reste à droite */
+            margin-right: 0; 
+        }
+        
+        .apropos .img img {
+            width: 300px;  /* Ajuste la largeur */
+            height: auto;  /* Garde les proportions */
+            border-radius: 15px; /* Coins arrondis */
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Effet d'ombre */
+        }
+        
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(219, 217, 217, 0.99);
+            width: 100px;
+            border-radius: 5px;
+        }
+        
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(255, 254, 254, 0.94);
+        }
+        
+        img {
+            border-radius: 5px 5px 0 0;
+        }
+        
+        .container {
+            padding: 2px 16px;
+        }
+        
+        .container h4 {
+            color: #0dd0f7;
+        }
+        
+        .container:hover h4 {
+            color: rgb(21, 15, 15);
+        }
+        
+        .container:hover {
+            background-color: #0dd0f7;
+        }
+        
+        h2 {
+            margin-top: 50px;
+            text-align: center;
+            color: #0dd0f7;
+        }
+        
+        h4 {
+            text-align: center;
+        }
+        
+        .texte {
+            margin-left: 300px;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+            padding-right: 100px;
+            padding-top: 20px;
+            padding-left: 70px;
+        }
+        
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        
+        .flip-card-front {
+            background-color: #130e0e;
+            color: rgb(249, 249, 249);
+        }
+        
+        .flip-card-back {
+            background-color: #0dd0f7;
+            color: rgb(9, 6, 6);
+            transform: rotateY(180deg);
+        }
+        
+        .equipe-body {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+        
+        .img-flip {
+            width: 100%;
+            height: 300px;
+        }
+        /* portofolio */
+        
+        .portofolio {
+            /* margin-left: 20px; */
+            padding-left: 20px;
+            background-color: #FAFAFA07;
+        }
+        
+        .row {
+            display: flex;
+            width: 100%;
+            max-width: 100%;
+        }
+        
+        .overlay {
+            text-align: center;
+            color: #0dd0f7;
+            font-size: 20px;
+        }
+        
+        .img-fluid {
+            width: 300px;
+            padding: 55px;
+            border-radius: 30px;
+        }
+        
+        .img-fluid:hover {
+            transform: scale(1.1);
+            transition: 2s;
+        }
+        /* footer */
+        
+        .footer-body {
+            width: 900px;
+            margin-left: 200px;
+            border-radius: 20px;
+            background-color: rgb(3, 2, 2);
+            padding: 20px;
+            box-shadow: 1px 6px 8px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #0dd0f7;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+            border-radius: 20px;
+        }
+
+        input[type=email],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #0dd0f7;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+            border-radius: 20px;
+        }
+        
+        input[type=submit] {
+            background-color: #0dd0f7;
+            color: rgb(20, 8, 8);
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #0dd0f7;
+        }
+        
+        .footer-end {
+            height: 350px;
+            background-color: rgb(11, 11, 12);
+            display: flex;
+            padding: 50px;
+        }
+        
+        .navbar-brand-footer {
+            color: #0dd0f7da;
+            margin-left: 70px;
+            padding: 30px;
+        }
+        
+        .navbar-footer ul li a {
+            text-decoration: none;
+            color: rgb(249, 244, 244);
+        }
+        
+        .navbar-footer ul li:hover a {
+            text-decoration: none;
+            color: #0dd0f7;
+        }
+        
+        .navbar-footer ul li {
+            padding: 10px;
+        }
+        
+        .img-fluid-food {
+            width: 50px;
+            height: 50px;
+            padding-left: 30px;
+        }
+        
+        .img-fluid-footer {
+            display: flex;
+            align-items: center;
+            padding: 200px;
+        }
+
