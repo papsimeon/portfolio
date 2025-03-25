@@ -315,8 +315,7 @@
             transition: 2s;
         }
         /* footer */
-        
-        .footer-body {
+       .footer-body {
             width: 900px;
             margin-left: 200px;
             border-radius: 20px;
@@ -326,6 +325,20 @@
         }
         
         input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #0dd0f7;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+            border-radius: 20px;
+        }
+
+        input[type=email],
         select,
         textarea {
             width: 100%;
@@ -349,6 +362,9 @@
             border-radius: 20px;
         }
         
+        input[type=submit]:hover {
+            background-color: #0dd0f7;
+        }
         
         .footer-end {
             height: 350px;
@@ -376,7 +392,6 @@
         .navbar-footer ul li {
             padding: 10px;
         }
-        
         .img-fluid-food {
             width: 50px;
             height: 50px;
