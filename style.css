@@ -74,8 +74,8 @@
     position: absolute;
     top: 50%; 
     left: 10%;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background-color: rgba(13, 208, 247, 0.3); /* Bleu transparent */
     border-radius: 50%;
     animation: moveCircle 6s linear infinite alternate;
@@ -342,20 +342,6 @@
             resize: vertical;
             border-radius: 20px;
         }
-
-        input[type=email],
-        select,
-        textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #0dd0f7;
-            border-radius: 4px;
-            box-sizing: border-box;
-            margin-top: 6px;
-            margin-bottom: 16px;
-            resize: vertical;
-            border-radius: 20px;
-        }
         
         input[type=submit] {
             background-color: #0dd0f7;
@@ -367,9 +353,6 @@
             border-radius: 20px;
         }
         
-        input[type=submit]:hover {
-            background-color: #0dd0f7;
-        }
         
         .footer-end {
             height: 350px;
@@ -450,6 +433,12 @@
         display: block;
         margin: 10px auto;
     }
+       .img-flip {
+        width: 90%; /* Réduit les images */
+        height: auto;
+        display: block;
+        margin: 10px auto;
+    }
 
     .btn-btn {
         width: 100%;
@@ -457,7 +446,7 @@
         padding: 10px;
     }
 
-    .menu {
+    .navbar {
         display: block; /* Affiche le menu en mode mobile */
         text-align: center;
     }
