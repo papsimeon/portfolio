@@ -76,7 +76,7 @@
     left: 10%;
     width: 200px;
     height: 200px;
-    background-color: rgba(13, 208, 247, 0.3); /* Bleu transparent */
+    background-color: rgb(29, 202, 246); /* Bleu transparent */
     border-radius: 50%;
     animation: moveCircle 6s linear infinite alternate;
 }
@@ -118,7 +118,7 @@
             transform: translate(-50%, -50%);
             text-align: center;
         }
-        /* modificqtion du paragraphe de notre bqnnier */
+        /* modificqtion du paragraphe de notre bannier */
         
         .banner-text {
             color: rgb(250, 250, 250);
@@ -126,11 +126,7 @@
             font-style: italic;
         }
 
-        .banner-text .p {
-            color: rgb(220, 13, 13);
-            font-size: 55px;
-            font-style: italic;
-        }
+        
         /* modification du bouton start */
         
         .btn-btn {
