@@ -1,476 +1,615 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>papsimeon | portfolio</title>
-
-    <link rel="stylesheet" href="style.css ">
-    <link rel="stylesheet" href="https://papsimeon.github.io/portfolio/style.css">
-
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="https://papsimeon.github.io/portfolio/normalize.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Papsimeon | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-switcher.css">
+  <link rel="stylesheet" href="color-1.css">
+  <link rel="stylesheet" href="color-2.css">
+  <link rel="stylesheet" href="color-3.css">
+  <link rel="stylesheet" href="color-4.css">
+  <link rel="stylesheet" href="color-5.css">
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  
+  <link rel="stylesheet" href="color-1.css" class="alternate-style" title="color-1" 
+  disabled>
+  <link rel="stylesheet" href="color-2.css" class="alternate-style" title="color-2" 
+  disabled>
+  <link rel="stylesheet" href="color-3.css" class="alternate-style" title="color-3" 
+  disabled>
+  <link rel="stylesheet" href="color-4.css" class="alternate-style" title="color-4" 
+  disabled>
+  <link rel="stylesheet" href="color-5.css" class="alternate-style" title="color-5" 
+  disabled>
 </head>
-
 <body>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Main container-->
+  <div class="main-container">
+    <!--Pap start-->
+    <div class="papsimeon">
+      <div class="logo">
+        <a href="#"> <span>P</span>apsimeon</a>
+      </div>
+      <div class="nav-toggler">
+        <span></span>
+      </div>
 
-    <!-- la bar de navigation -->
-    <header>
-        <div class="navbar-brand ">
-            <h1>Papsimeon MBADINGA</h1>
-        </div>
-        <nav class="navbar ">
-            <ul>
-                <li>
-                    <a href="#apropos">A Propos</a>
-                </li>
-                <li>
-                    <a href="#team">Experiences</a>
+      <ul class="nav">
+        <li> <a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+        <li> <a href="#about"><i class="fa fa-user"></i>About</a></li>
+        <li> <a href="#service"><i class="fa fa-list"></i>Projets</a></li>
+        <li> <a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+        <li> <a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
 
-                </li>
-                <li>
-                    <a href="#secteurs d'activités">Competences</a>
-                </li>
-                <li>
-                    <a href="#realisations">Projets</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-<!-- la bannière -->
-<div class="banner" id="accueil" style="background-color: black;">
-    <div class="container">
-        <div class="banner-content">
-            <!-- Texte animé avec effet de curseur -->
-            <h1 class="banner-text">
-                <span id="animated-text"></span><span class="cursor">|</span>
-            </h1>
-            <p class="banner-text" style="color: #0dd0f7;">& DATA SCIENTISTE</p>
-
-            <p style="color: #f5f5f5;">
-“La technologie n’est pas seulement anthropocentrique, 
-elle est une révolution constante que j’ai choisi d’explorer.”
-            </p>
-
-            <a class="btn-btn" href="#footer-ends">Start</a>
-        </div>
+      </ul>
     </div>
-    <!-- Boule animée -->
-    <div class="animated-circle"></div>
+    <!--Pap end-->
 
-</div>
+    <!--Main content start-->
+    <div class="main-content">
+
+      <!---------------------Home section start--------------->
+      <section class="home active section" id="home">
+        <div class="container">
+          <div class="row">
+            <div class="home-info padd-15">
+              <h3 class="hello">Hello, My name is <span class="name">Papsimeon MBADINGA</span></h3>
+              <h3 class="my-profession">Je suis <span class="typing">Informaticien</span></h3>
+              <p>“La technologie n’est pas seulement anthropocentrique, elle est une révolution 
+                constante que j’ai choisi d'explorer"</p>
+                <a href="#contact" class="btn hire-me">Contactez moi </a>
+            </div>
+            <div class="home-img padd-15">
+              <img src="images/papsimeon.JPG" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Home section End-->
 
 
-<!--------------------Section A propos ---------------->
+      <!------------------------About section start---------------->
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Apropos</h2>
 
-<section class="apropos" id="apropos"style="margin-top: 10px;">
-   
-    <div class="row" style="background-color: black; color: white; padding: 20px;">
-      <div class="col50">
-        <h2 style="color: #0dd0f7;">A Propos</h2>
-        <p>Je suis Papsimeon MBADINGA, diplômé en informatique, spécialité génie logiciel.</p>
-        <p>J’ai également suivi des formations certifiantes en sécurité de l’information
-             et en analyse de données à Duke University (USA).</p>
-        <p>Au fil de mon parcours, j’ai développé une expertise en gestion de bases de données, en 
-            optimisation des performances SQL et en sécurisation des systèmes d’information. </p>
-            <p>Mon expérience en développement logiciel et analyse de données me permet d’avoir une vision 
-            globale des systèmes d’information et de leur impact sur la prise de 
-            décision.</p>
-            <p>Mon objectif est d’intégrer une organisation innovante, où je pourra 
-            analyser et interpréter les données pour identifier des informations 
-            stratégiques et proposer des solutions efficaces aux problèmes métiers. </p>
-        
-        <p>
-  <a href="https://papsimeon.github.io/portfolio/informaticien_papen.pdf" 
-     download="informaticien_papen.pdf"
-     style="color: #0dd0f7; text-decoration: none;">
-    📄 Télécharger mon CV
-  </a>
-</p>
-      </div>
-      
-      <div class="img">
-        
-          <img class="img" src="images/papsimeon.JPG" alt="Papsimeon" style="width: 100%; max-width: 300px; border-radius: 20px;">
-          <!-------------------<img src="https://raw.githubusercontent.com/pasimeon/portfolio/main/images/papsimeon.jpg" alt="Ma photo">  
-          <img src="images/papsimeon.jpg" alt="image" style="width: 100%; max-width: 300px; border-radius: 10px;">
-          ----------------> 
+            </div>
+          </div>
+          <div class="row">
+            <div class="about-content padd-15">
+              <div class="row">
+                <div class="about-text padd-15">
+                  <h3>Diplômé en informatique, spécialité <span> Génie Logiciel.</span></h3>
 
+                  <p>J’ai également suivi des formations certifiantes en sécurité de l’information 
+                    et en analyse de données à Duke University (USA).
+                    <!------------------------
+                    Au fil de mon parcours,  j’ai développé une expertise en développement logiciel et 
+                    analyse de données me permet d’avoir une vision globale des systèmes d’information et 
+                    de leur impact sur la prise de décision..---------------->
+                    Mon objectif est d’intégrer une organisation innovante, où je pourra analyser et 
+                    les données pour identifier des informations et proposer 
+                    des solutions efficaces aux problèmes métiers.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="personal-info padd-15">
+                  <div class="row">
+                    <div class="info-item padd-15">
+                      <p>Birday : <span>06 Nov 1997</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Age : <span>29</span>ans</p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Email : <span>simestance@gmail.com</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Diplome : <span>Génie Logiciel</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Phone : <span>+242 06 851 21 18</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Ville : <span>Brazzaville</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Freelance : <span>Affirmatif</span></p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="buttons padd-15">
+                      
+                     <!--<a href="#contact" data-section-index="1" class="btn hire-me">Contactez moi</a> -->
+
+                      
+
+                      
+                        <a href="C:\Users\toshiba\OneDrive\Site/informaticien_papen.pdf" class="btn hire-me"
+                           download="informaticien_papen.pdf">
+                          📄 Télécharger mon CV
+                        </a>
+                      
+
+                    </div>
+                  </div>
+                </div>
+                <div class="skills padd-15">
+                  <div class="row">
+                  <div class="skill-item padd-15">
+                    <h5>Python</h5>
+                    <div class="progress">
+                    <div class="progress-in" style="width: 95%;"></div>
+                    <div class="skill-percent">95%</div>
+                  </div>
+                </div>
+
+                  <div class="skill-item padd-15">
+                    <h5>JS</h5>
+                    <div class="progress">
+                    <div class="progress-in" style="width: 80%;"></div>
+                    <div class="skill-percent">80%</div>
+                  </div>
+                </div>
+
+                  <div class="skill-item padd-15">
+                    <h5>HTML</h5>
+                    <div class="progress">
+                    <div class="progress-in" style="width: 90%;"></div>
+                    <div class="skill-percent">90%</div>
+                  </div>
+                </div>
+
+                  <div class="skill-item padd-15">
+                    <h5>CSS</h5>
+                    <div class="progress">
+                    <div class="progress-in" style="width: 90%;"></div>
+                    <div class="skill-percent">90%</div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          <div class="row">
+            <div class="education padd-15">
+              <h3 class="title">Education</h3>
+              <div class="row">
+                <div class="timeline-box padd-15">
+                  <div class="timeline shadow-dark">
+                  <!-----Timeline item----->>
+                  <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-date">
+                      <i class="fa fa-calendar"></i> Nov 2024 (En cours)
+                    </h3>
+                    <h4 class="timeline-title">Akieni Academy</h4>
+                    <p class="timeline-text"> Développement python and data science</p>
+                  </div>
+
+                  <!-----Timeline item----->>
+                  <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-date">
+                      <i class="fa fa-calendar"></i> Sept 2023
+                    </h3>
+                    <h4 class="timeline-title">CFI-CIRAS </h4>
+                    <p class="timeline-text"> Licence en informatique, option : Génie Logiciel.</p>
+                  </div>
+
+                  <!-----Timeline item----->>
+                  <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-date">
+                      <i class="fa fa-calendar"></i> Sept 2022
+                    </h3>
+                    <h4 class="timeline-title">CFI-CIRAS </h4>
+                    <p class="timeline-text">
+                      Diplôme Universitaire de Technologie (DUT), option : Informatique de Gestion.</p>
+                  </div>
+
+                  <!-----Timeline item----->>
+                  <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-date">
+                      <i class="fa fa-calendar"></i> Juin 2018
+                    </h3>
+                    <h4 class="timeline-title">Lycée Victor Justin Sathoud </h4>
+                    <p class="timeline-text">
+                      Baccalauréat Scientifique série D..</p>
+                  </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="experience padd-15">
+              <h3 class="title">Experience</h3>
+              <div class="row">
+                <div class="timeline-box padd-15">
+                  <div class="timeline shadow-dark">
+                  <!-----Timeline item----->>
+                  <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-date">
+                      <i class="fa fa-calendar"></i> Janv 2025 à présent
+                    </h3>
+                    <h4 class="timeline-title">Securex</h4>
+                    <p class="timeline-text"> Assistant IT</p>
+                  </div>
+
+                  <!-----Timeline item----->>
+                  <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-date">
+                      <i class="fa fa-calendar"></i> Nov 2023 à Sep 2024
+                    </h3>
+                    <h4 class="timeline-title">Banque Congolaise de l'Habitat (BCH) </h4>
+                    <p class="timeline-text"> Administrateur de Base de Donnée</p>
+                    
+                  </div>
+
+                  <!-----Timeline item----->>
+                  <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-date">
+                      <i class="fa fa-calendar"></i> Avr-Oct 2023
+                    </h3>
+                    <h4 class="timeline-title">AfriExchanger </h4>
+                    <p class="timeline-text">
+                      Coordonateur de projet informatique</p>
+                      
+                  </div>
+
+                  <!-----Timeline item----->>
+                  <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-date">
+                      <i class="fa fa-calendar"></i> Nov 2023 - Mars 2024
+                    </h3>
+                    <h4 class="timeline-title">Ernest & Young (EY) </h4>
+                    <p class="timeline-text">
+                      Stagiaire pour la mission de récolte des données du contribuable congolais.  </p>
+                  </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          </div>
+        </div>
+        </div>
+      </section>
+      <!--About section End-->
+
+<!--------------------Projets section start------------------->
+      <section class="service section" id="service">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Projets</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!--Projets item start-->
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-calendar-check"></i>
+                </div>
+                <h4>Gestion de presence</h4>
+                <p>Système de pointage moderne via QR Code et biométrie.</p>
+              </div>
+            </div>
+            <!--Projets item END-->
+
+            <!--Projets item start-->
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-money-bill-wave"></i>
+                </div>
+                <h4>Gestion de paie</h4>
+                <p>Automatisation du calcul et du versement des salaires.</p>
+              </div>
+            </div>
+            <!--Projets item END-->
+
+            <!--Projets item start-->
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-shield-alt"></i>
+                </div>
+                <h4>Securité des PME</h4>
+                <p>Protection des données sensibles et sécurisation des accès.</p>
+              </div>
+            </div>
+            <!--Projets item END-->
+
+             <!--Projets item start-->
+             <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-chart-line"></i>
+                </div>
+                <h4>Dashboard</h4>
+                <p>Des graphiques et des visualisations pour une meilleure compréhension des données.</p>
+              </div>
+            </div>
+            <!--Projets item END-->
+
+            <!--Projets item start-->
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-folder-open"></i>
+                </div>
+                <h4>GED</h4>
+                <p>Organisation, classement et consultation numérique des documents.</p>
+              </div>
+            </div>
+            <!--Projets item END-->
+
+            <!--Projets item start-->
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-user-md"></i>
+                </div>
+                <h4>Gestion des patients</h4>
+                <p>Suivi médical, dossier électronique et planification des soins.</p>
+              </div>
+            </div>
+            <!--Projets item END-->
+
+          </div>
+        </div>
+      </section>
+      <!--Projets section End-->
+
+      <!--------------------Portfolio section start------------------->
+      <section class="portfolio section" id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Portfolio</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="portfolio-heading padd-15">
+              <h2>Mes projets :</h2>
+            </div>
+          </div>
+          <div class="row">
+
+            <!-- Portfolio item start-->
+             <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/controle.PNG" alt="">
+                </div>
+              </div>
+             </div>
+             <!-- Portfolio item end-->
+
+             <!-- Portfolio item start-->
+             <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/paie.jfif" alt="">
+                </div>
+              </div>
+             </div>
+             <!-- Portfolio item end-->
+
+              <!-- Portfolio item start-->
+             <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/securite.jpg" alt="">
+                </div>
+              </div>
+             </div>
+             <!-- Portfolio item end-->
+
+              <!-- Portfolio item start-->
+             <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/dash.jfif" alt="">
+                </div>
+              </div>
+             </div>
+             <!-- Portfolio item end-->
+
+              <!-- Portfolio item start-->
+             <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/ged.jfif" alt="">
+                </div>
+              </div>
+             </div>
+             <!-- Portfolio item end-->
+
+              <!-- Portfolio item start-->
+             <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/patient.jfif" alt="">
+                </div>
+              </div>
+             </div>
+             <!-- Portfolio item end-->
+
+              
+          </div>
+        </div>
+      </section>
+      <!--Porfolio section End-->
+<!--Contact section start-->
+<section class="contact section" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="section-title padd-15">
+        <h2>Contactez Moi</h2>
       </div>
     </div>
-  </section>
-
-
-  <!--------------------Section Expérience ---------------->
-<section id="team" style="margin-top: 10px; background-color: black; color: white; padding: 20px;">
-    <h2 style="color: #0dd0f7;">Expériences</h2>
-  
-    <p>Passionné par la gestion des données, je souhaite mettre mon expertise en modélisation, 
-      optimisation SQL et sécurité au service de votre entreprise.</p>
-    <p>Grâce à mes certifications en sécurité de l’information,
-      je peux renforcer la protection des données et assurer leur intégrité et disponibilité.</p>
-    <p>Mon expérience en analyse de données me permet d’optimiser les performances 
-      des bases et de fournir des insights stratégiques aux équipes métier.</p>
-  
-    <div class="equipe-body">
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img class="img-flip" src="images/securex.PNG" alt="Securex" style="width: 150px; height: 150px;">
-          </div>
-          <br>
-          <div class="flip-card-back">
-            <h1>Clinique Securex</h1>
-            <p>Assistant IT</p>
-            <p>Janvier 2025 à nos jours</p>
-          </div>
-        </div>
+    <h3 class="contact-title padd-15">Avez-Vous une Question?</h3>
+    <h4 class="contact-sub-title padd-15">Je Suis à Votre Disposition</h4>
+    <div class="row">
+      <!--Contact info item start-->
+      <div class="contact-info-item padd-15">
+        <div class="icon"> <i class="fa fa-phone"></i> </div>
+        <h4>Appeler moi</h4>
+        <p>+242 06 851 21 18</p>
       </div>
-  
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img class="img-flip" src="images/akieni_academy.PNG" alt="Akieni" style="width: 150px; height: 150px;">
-          </div>
-          <br>
-          <div class="flip-card-back">
-            <h1>Akieni Academy</h1>
-            <p>Data Scientist (Freelance)</p>
-            <p>Nov 2024 à nos jours</p>
-          </div>
-        </div>
+      <!--Contact info item end-->
+      <div class="contact-info-item padd-15">
+        <div class="icon"> <i class="fa fa-map-marker-alt"></i> </div>
+        <h4>Adresse</h4>
+        <p>Brazzaville</p>
       </div>
-  
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img class="img-flip" src="images/bch.jpg" alt="BCH" style="width: 150px; height: 150px;">
-          </div>
-          <br>
-          <div class="flip-card-back">
-            <h1>Banque Congolaise de l'Habitat (BCH)</h1>
-            <p>Informaticien à la centrale d'incident de paiement</p>
-            <p>Nov 2023 - Sep 2024</p>
-          </div>
-        </div>
+      <div class="contact-info-item padd-15">
+        <div class="icon"> <i class="fa fa-envelope"></i> </div>
+        <h4>Email</h4>
+        <p>simestance@gmail.com</p>
+      </div>
+      <div class="contact-info-item padd-15">
+        <div class="icon"> <i class="fa fa-globe-europe"></i> </div>
+        <h4>Website</h4>
+        <p>https://papsimeon.github.io/portfolio</p>
       </div>
     </div>
-  
-    <div class="equipe-body">
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img class="img-flip" src="images/Logo.jpg" alt="AJIPE" style="width: 150px; height: 150px;">
+    <h3 class="contact-title padd-15">Envoyez Moi Un Mail</h3>
+    <h4 class="contact-sub-title padd-15">J'ai Hâte de Prendre Connaissance De Votre Message</h4>
+
+    <!--Contact Form-->
+    <div class="row">
+      <div class="contact-form padd-15">
+        <form id="contact-form">
+          <div class="row">
+            <div class="form-item col-6 padd-15">
+              <div class="form-group">
+                <input type="text" class="form-control" name="name" placeholder="Nom" required>
+              </div>
+            </div>
+            <div class="form-item col-6 padd-15">
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" placeholder="Email" required>
+              </div>
+            </div>
           </div>
-          <br>
-          <div class="flip-card-back">
-            <h1>AJIPE Association</h1>
-            <p>Président de l'association</p>
-            <p>Oct 2024 à nos jours</p>
+
+          <div class="row">
+            <div class="form-item col-12 padd-15">
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" placeholder="Sujet" required>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-  
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img class="img-flip" src="images/afriexchanger.PNG" alt="Afriexchanger" style="width: 150px; height: 150px;">
+
+          <div class="row">
+            <div class="form-item col-12 padd-15">
+              <div class="form-group">
+                <textarea name="message" class="form-control" placeholder="Message" required></textarea>
+              </div>
+            </div>
           </div>
-          <br>
-          <div class="flip-card-back">
-            <h1>Afriexchanger</h1>
-            <p>Coordonnateur de projet informatique</p>
-            <p>Avril - Octobre 2023</p>
+
+          <div class="row">
+            <div class="form-item col-12 padd-15">
+              <button type="submit" class="btn">Envoyez</button>
+            </div>
           </div>
-        </div>
-      </div>
-  
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img class="img-flip" src="images/ey.PNG" alt="EY" style="width: 150px; height: 150px;">
-          </div>
-          <br>
-          <div class="flip-card-back">
-            <h1>Ernst & Young (EY)</h1>
-            <p>Mission de récolte des données du contribuable congolais.</p>
-            <p>Nov 2023 - Mars 2024</p>
-          </div>
-        </div>
+        </form>
       </div>
     </div>
-  </section>
-  
-
-    <!-- Competences -->
-    <section id="secteurs d'activités" style="margin-top: 10px; background-color: black; color: white; padding: 20px;">
-        
-
-        <h2>Comptences</h2>
-        <p>Mon attachement à la technologie vient de son pouvoir heuristique : 
-            transformer des idées en solutions concrètes. </p>
-            <p> Elle offre des moyens infinis d’innover et d’avoir un impact 
-            durable sur la société. </p>
-         
-        <div class="card-body">
-            <div class="card">
-                <img src="images/py.PNG" alt="Avatar" style="width:100%">
-                <div class="container">
-                    <h4 style="text-align: center;"><b> Python</b></h4>
-                    <p> </p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/js.PNG" alt="Avatar" style="width:100%">
-                <div class="container">
-                    <h4><b>JavaScript</b></h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/wl.png" alt="Avatar" style="width:100%">
-                <div class="container">
-                    <h4><b>Wlangage</b></h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/c.PNG" alt="Avatar" style="width:100%">
-                <div class="container">
-                    <h4><b>C++</b></h4>
-                    <p></p>
-                </div>
-            </div>
-        </div>
-        <div class="card-body">
-            <div class="card">
-                <img src="images/html.png" alt="Avatar" style="width:100%">
-                <div class="container">
-                    <h4><b>html</b></h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/css.png" alt="Avatar" style="width:100%">
-                <div class="container">
-                    <h4><b>Css</b></h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/php.jfif" alt="Avatar" style="width:100%">
-                <div class="container">
-                    <h4><b>Php</b></h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/bt.jfif" alt="Avatar" style="width:100%">
-                <div class="container">
-                    <h4><b>Boostrap</b></h4>
-                    <p></p>
-                </div>
-            </div>
-            </div>
-
-            <div class="card-body">
-                <div class="card">
-                    <img src="images/oracle.jpg" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4><b>oracle</b></h4>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/mysql.png" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4><b>Mysql</b></h4>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/ps.png" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4><b>PostgreSQL</b></h4>
-                        <p></p>
-                    </div>
-               
-
-        </div>
-    </section>
-
-  
-    <!---- 
-    
-        <h2>Temoignages</h2>
+  </div>
+</section>
+<!--Contact section end-->
 
 
-        <div class="texte-body">
-            <div class="texte">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam placeat deserunt ex architecto quaerat suscipit maxime hic, facilis, cum officia ipsa, nulla accusantium debitis earum. Tenetur aliquam nostrum cupiditate possimus.</p>
-            </div>
-        </div>
-    -->
-        
-    <!----Projets -->
-    <section id="realisations" style="margin-top: 10px; background-color: black; color: white; padding: 20px;">
-        
-        <div class="realisations">
-            <h2>Projets</h2>
-            <p>Je combine des compétences techniques solides avec une volonté 
-                d'apprendre et de m'investir dans des projets ambitieux. </div>
-            <p>
-                Je suis autonome, mais je sais aussi collaborer
-                 efficacement au sein d’une équipe 
-                pour atteindre des objectifs communs</p>
-            <div class="row">
-                <div class="col-1">
-                    <img class="img-fluid" src="images/controle.PNG" alt="">
-                    <div class="overlay">
-
-                        Gestion des presences
-                    </div>
-                </div>
-                <diiv class="col-1">
-                    <img class="img-fluid" src="images/paie.jfif" alt="">
-                    <div class="overlay">
-                       Gestion de paie
-                    </div>
-                </diiv>
-                <div class="col-1">
-                    <img class="img-fluid" src="images/securite.jpg" alt="">
-                    <div class="overlay">
-                        Securite des PME
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1">
-                    <img class="img-fluid" src="images/dash.jfif" alt="">
-                    <div class="overlay">
-                        Dashboard
-                    </div>
-                </div>
-                <div class="col-1">
-                    <img class="img-fluid" src="images/ged.jfif" alt="">
-                    <div class="overlay">
-                        GED
-                    </div>
-                </div>
-                <div class="col-1">
-                    <img class="img-fluid" src="images/patient.jfif" alt="">
-                    <div class="overlay">
-                        Gestion des patients
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <br>
-    <br>
-    <!-- Pied de page -->
-<footer id="contact">
-    <div class="footer-body">
-        <h2>Contact</h2>
-        <div class="footer-container">
-            <form action="send_email.php" method="POST">
-                <label for="fname">Nom :</label>
-                <input type="text" id="fname" name="nom" placeholder="Ton Nom.." required>
-
-                <label for="lname">Mail :</label>
-                <input type="email" id="lname" name="mail" placeholder="Votre adresse mail.." required>
-
-                <label for="subject"> Objet :</label> 
-                <textarea id="subject" name="message" placeholder="Écrivez quelque chose.." style="height:200px" required></textarea>
-
-                <input type="submit" value="Envoyer">
-            </form>
-        </div>
     </div>
-</footer>
+<!--Main content end-->
+  </div>
+  <!--Main container End-->
 
-        <br>
-        <div class="footer-end " id="footer-ends">
-            <div class=" navbar-brand-footer ">
-                <h1>Papsimeon MBADINGA</h1>
-            </div>
-            <nav class="navbar-footer ">
-                <ul>
-                    <li>
-                        <a href="#apropos">A proos</a>
-                    </li>
-                    <li>
-                        <a href="#team">Experiences</a>
-
-                    </li>
-                    <li>
-                        <a href="#secteurs d'activités ">Competences</a>
-                    </li>
-                    <li>
-                        <a href="#realisations ">Projets</a>
-                    </li>
-                    <li>
-                        <a href="#contact ">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <div class="img-fluid-footer">
-                <a href="https://www.linkedin.com/in/papsimeon-mbadinga-1b8480274/"> <img class="img-fluid-food" src="images/linkedin.png" alt=""></a>
-                <a href="https://github.com/papsimeon/"> <img class="img-fluid-food" src="images/git.jfif" alt=""></a>
-                <a href="https://www.facebook.com/wiz.maideur/"><img class="img-fluid-food" src="images/facebook.png" alt=""></a>
-
-                <a href="https://www.youtube.com/watch?v=DSCIRgHX1qA"> <img class="img-fluid-food" src="images/youtube.PNG" alt=""></a>
-                
-            </div>
-            <p style="color:rgb(255, 255, 255) ;">copyrigth papsimeon 2025 tout droit reservé</p>
+<!-------------------Style Switcher Start----------->
+      <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+          <i class="fas fa-cog spin"></i>
         </div>
+        <div class="day-night s-icon">
+          <i class="fas"></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+          <span class="color-1" onclick="setActiveStyle ('color-1')"></span>
+          <span class="color-2" onclick="setActiveStyle ('color-2')"></span>
+          <span class="color-3" onclick="setActiveStyle ('color-3')"></span>
+          <span class="color-4" onclick="setActiveStyle ('color-4')"></span>
+          <span class="color-5" onclick="setActiveStyle ('color-5')"></span>
+        </div>
+      </div>
+<!---Style Switcher End-->
 
-    </footer>
+  <!--Js files-->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const textElement = document.getElementById("animated-text");
-            const cursor = document.querySelector(".cursor");
-            const texts = ["DEVELOPPEUR WEB", "INFORMATICIEN"];
-            let index = 0;
-            let charIndex = 0;
-            let isDeleting = false;
-            let typingSpeed = 200; // Vitesse de frappe (ms)
+  <script type="text/javascript">
+    // Initialise l'API EmailJS avec ta clé publique
+    (function() {
+      emailjs.init("72c8bktaQVxg6_gbH"); // Remplace par ta Public Key EmailJS
+    })();
+  
+    // Lorsque le formulaire est soumis
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();  // Empêche le rechargement de la page
+
+  const name = document.querySelector('input[name="name"]').value;
+  const email = document.querySelector('input[name="email"]').value;
+  const subject = document.querySelector('input[name="subject"]').value;
+  const message = document.querySelector('textarea[name="message"]').value;
+
+  // Envoi de l'email via EmailJS
+  emailjs.send("vhrtmzw", "gawga3c", {
+    from_name: name,
+    from_email: email,
+    subject: subject,
+    message: message
+  })
+  .then(function(response) {
+    console.log("SUCCESS", response);
+    alert("Votre message a été envoyé avec succès !");
+  }, function(error) {
+    console.log("FAILED", error);
+    alert("Une erreur est survenue : " + JSON.stringify(error));
+  });
+});
+
+  </script>
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" 
+integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="script.js"></script>
+
+  <script src="style-switcher.js">
     
-            function typeEffect() {
-                let currentText = texts[index];
-    
-                if (isDeleting) {
-                    textElement.innerHTML = currentText.substring(0, charIndex);
-                    charIndex--;
-                } else {
-                    textElement.innerHTML = currentText.substring(0, charIndex);
-                    charIndex++;
-                }
-    
-                if (!isDeleting && charIndex === currentText.length) {
-                    setTimeout(() => isDeleting = true, 2000); // Pause avant suppression
-                } else if (isDeleting && charIndex === 0) {
-                    isDeleting = false;
-                    index = (index + 1) % texts.length; // Changer de texte
-                }
-    
-                let nextSpeed = isDeleting ? 50 : typingSpeed;
-                setTimeout(typeEffect, nextSpeed);
-            }
-    
-            typeEffect();
-        });
-    </script>
-    
+  </script>
+
+
 </body>
 </html>
