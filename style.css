@@ -207,7 +207,8 @@ ul
 
 .papsimeon .logo a span
 {
-  font-family: 'Clicker Script', cursive;
+  /*font-family: 'Clicker Script', cursive;*/
+  font-family: 'Redressed', cursive;
   font-size: 40px;
 }
 
@@ -343,7 +344,8 @@ h3.hello
 }
 h3.hello span
 {
-  font-family: 'Clicker Script', cursive;
+  /*font-family: 'Clicker Script', cursive;*/
+  font-family: 'Redressed', cursive;
   font-size: 30px;
   font-weight: 700;
   color:var(--skin-color);
