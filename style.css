@@ -70,6 +70,25 @@ ul
   opacity: 1;
   animation: slideSection 1s ease;
 }
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.socials a img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.socials a img:hover {
+  transform: scale(1.1);
+}
+
 @keyframes slideSection
 {
   0%
@@ -186,7 +205,10 @@ ul
   align-items: center;
   z-index: 10;
   transition: all 0.3s ease;
+  flex-direction: column;
+  align-items: center;
 }
+
 .papsimeon .logo
 {
   position: absolute;
